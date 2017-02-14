@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple ComboTree - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../demo.css">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+</head>
+<body>
+<h2>Multiple ComboTree</h2>
+<p>Click the right arrow button to show the tree panel and select multiple nodes.</p>
+<div style="margin:20px 0">
+    <span>Cascade Check: </span>
+    <input type="checkbox" checked onclick="$('#cc').combotree({cascadeCheck:$(this).is(':checked')})">
+</div>
+<div class="easyui-panel" style="width:100%;max-width:400px;padding:30px 60px;">
+    <div style="margin-bottom:20px">
+        <input id="cc" class="easyui-combotree"
+               data-options="url:'tree_data1.json',method:'get',label:'Select Nodes:',labelPosition:'top',multiple:true,value:[122,124]"
+               style="width:100%">
+    </div>
+</div>
+<button>点击</button>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            var t = $('#cc').combotree('getValues');
+            var n = $('#cc').combotree('getText');
+            //jso 与初始的建立数组对象相同
+            var jso = [{
+                "id":1,
+                "text":"My Documents",
+                "children":[{
+                    "id":11,
+                    "text":"Photos",
+                    "state":"closed",
+                    "children":[{
+                        "id":111,
+                        "text":"Friend"
+                    },{
+                        "id":112,
+                        "text":"Wife"
+                    },{
+                        "id":113,
+                        "text":"Company"
+                    }]
+                },{
+                    "id":12,
+                    "text":"Program Files",
+                    "children":[{
+                        "id":121,
+                        "text":"Intel"
+                    },{
+                        "id":122,
+                        "text":"Java",
+                        "attributes":{
+                            "p1":"Custom Attribute1",
+                            "p2":"Custom Attribute2"
+                        }
+                    },{
+                        "id":123,
+                        "text":"Microsoft Office"
+                    },{
+                        "id":124,
+                        "text":"Games",
+                        "checked":true
+                    }]
+                },{
+                    "id":13,
+                    "text":"index.html"
+                },{
+                    "id":14,
+                    "text":"about.html"
+                },{
+                    "id":15,
+                    "text":"welcome.html"
+                }]
+            }];
+            for(var j=0;j< t.length;j++){
+                if(jso[0].id==t[j]){
+                    jso[0].text="aaa";
+                }
+            }
+            for(var i=0;i<jso[0].children.length;i++){
+                for(var j=0;j< t.length;j++){
+                    if(jso[0].children[i].id==t[j]){
+                        jso[0].children[i].text="aaa";
+                    }
+                }
+            };
+            for(var i=0;i<jso[0].children[0].children.length;i++){
+                for(var j=0;j< t.length;j++){
+                    if(jso[0].children[0].children[i].id==t[j]){
+                        jso[0].children[0].children[i].text="aaa";
+                    }
+                }
+            };
+            for(var i=0;i<jso[0].children[1].children.length;i++){
+                for(var j=0;j< t.length;j++){
+                    if(jso[0].children[1].children[i].id==t[j]){
+                        jso[0].children[1].children[i].text="aaa";
+                    }
+                }
+            };
+            $('#cc').combotree('loadData', jso);
+        })
+    })
+</script>
+
+</body>
+</html>

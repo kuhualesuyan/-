@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    font-family: Microsoft YaHei;
+}
+body{
+    width: 100%;
+    height: auto;
+    color: #666;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    float: left;
+}
+#top{
+    position: static;
+    height: 3.75rem;
+    background: #222;
+}
+#top_one{
+    position: relative;
+    height: 100%;
+    width: 74.9rem;
+    margin: 0 auto;
+}
+#logo{
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 7rem;
+    height: 100%;
+    cursor: pointer;
+}
+#top_two{
+    position: absolute;
+    padding-top: 7px;
+    margin-left: 8.5rem;
+    cursor: pointer;
+}
+#search{
+    position: absolute;
+    left: 16.5rem;
+    width: 23rem;
+    height: 63%;
+    background: #e3e3e3;
+    margin-top: 0.7rem;
+    border: 0 solid #EEF1F0;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    outline: medium;
+}
+#search_btn{
+    position: absolute;
+    left: 39.1rem;
+    top: 0.7rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#logintable{
+    position: absolute;
+    left: 47.5rem;
+    top: 1.1rem;
+}
+#logintable li{
+    text-decoration: none;
+    color: #ccc;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    line-height: 24px;
+    font-size: 0.8rem;
+    word-spacing: normal;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    margin-left: 12px;
+    letter-spacing: 2px;
+}
+#logintable li:hover {
+    color: #6cc900;
+    cursor: pointer;
+}
+#tui{
+    position: relative;
+    width: 100%;
+    height: 25.6rem;
+    overflow: hidden;
+}
+#tui ul li a{
+    width: 100%;
+    height:100%;
+}
+#one{
+    position: relative;
+    height: 6.9rem;
+    background: #010101;
+    overflow: hidden;
+}
+#qiehuan{
+    position: absolute;
+    overflow: hidden;
+    height: 371px;
+    border-radius: 6px;
+    background: url("../img/site-focuslist_bg_new.png") no-repeat;
+    bottom: 22px;
+    width: 247px;
+    right: 66px;
+    z-index: 14;
+}
+#qiehuan ul{
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+}
+#qiehuan ul li a{
+    padding: 0 12px;
+    line-height: 30px;
+    margin: 2px 0;
+    overflow: hidden;
+    display: block;
+    color: #ccc;
+    font-size: 14px;
+    width: 93%;
+}
+#qiehuan ul li a:hover{
+    background-color: #63B504;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#daohangbg{
+    background: #000;
+    border: 1px solid #5aa700;
+    border-radius: 4px;
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    height: 88px;
+}
+#daohangbg ul{
+    background: url(../img/navMenu-line.png) no-repeat 0 -12px;
+    float: left;
+}
+#daohangbg ul li a{
+    position: relative;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav_one{
+    width: 4%;
+}
+.clearfix,.nav_two,.nav_six, .nav_one,.nav_seven{
+    height: 100%;
+    padding: 8px 0 0 26px;
+}
+#daohangbg ul li a:hover{
+    color: #6cc900;
+}
+.clearfix{
+    width: 9.5%;
+}
+.nav_two{
+    width: 12%;
+}
+.clearfix li, .nav_six li,.nav_two li{
+    width: 50%;
+}
+.nav_six{
+    width: 13.5%;
+}
+.nav_seven{
+    width: 19%;
+}
+.nav_seven li{
+    width:33%;
+}
+.nav_eight{
+    width: 5%;
+    padding: 16px 0 0 26px;
+}
+#main{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px
+}
+#mainbg{
+    width: 1180px;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+}
+#mainleft{
+    width: 400px;
+}
+#today{
+    border-bottom: 2px solid #85ba4d;
+    padding-top: 26px;
+    height: 45px;
+    overflow: hidden;
+}
+#more{
+    font-size: 14px;
+    display: inline-block;
+    color: #699f00;
+    cursor: pointer;
+    padding: 12px 5px 0 7px;
+}
+#today h3 span{
+    float: left;
+    font-size: 24px;
+    color: #699f00;
+    cursor: pointer;
+}
+#today div{
+    margin-left: 180px;
+    display: inline-block;
+    height: 24px;
+    line-height: 22px;
+    padding-left: 8px;
+    text-align: left;
+    width: 56px;
+    border: 1px solid #e9e9e9;
+    border-radius: 20px;
+}
+.site-icons {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: url(../img/star.png) no-repeat;
+}
+.gongxinbu{
+     font-size: 20px;
+     margin-top: 16px;
+ }
+.txt{
+    line-height: 32px;
+}
+#txtall{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 15px;
+}
+.biaozhi{
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    margin-right: 2px;
+    background: url("../img/biaozhi.png") no-repeat;
+}
+#imgall{
+    position: relative;
+}
+.imgbg{
+    line-height: 20px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 13px;
+    margin-right: 20px;
+    text-align: center;
+}
+.textOverflow,.txt:hover{
+    color: #699f00;
+    cursor: pointer;
+}
+.maincenter_ul{
+    position: absolute;
+    left: 26.5rem;
+    top: 6rem;
+}
+.left_li{
+    padding-left: 1rem;
+}
